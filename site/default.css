@@ -348,3 +348,61 @@ img.log_content_foto {
     object-fit: contain;
 }
 
+/* Стили для страницы участников */
+.participants-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #f6e9fc;
+}
+
+.leader-section {
+    background-color: rgba(113, 63, 134, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.leader-name {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #f6e9fc;
+}
+
+.leader-position {
+    font-size: 18px;
+    color: #d8bfd8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.participants-list {
+    columns: 2;
+    column-gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.participant-item {
+    margin-bottom: 15px;
+    break-inside: avoid;
+    padding: 8px 15px;
+    background-color: rgba(113, 63, 134, 0.3);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.participant-item:hover {
+    background-color: rgba(113, 63, 134, 0.5);
+}
+
+@media (max-width: 600px) {
+    .participants-list {
+        columns: 1;
+    }
+}
